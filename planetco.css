@@ -1,0 +1,122 @@
+/* Main styles */
+body {
+    padding: 0;
+    margin: 0;
+    background-image:url(https://cloud.addictivetips.com/wp-content/uploads/2017/10/Red-Galaxy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: 100%;
+    width: 100%;
+}
+
+.titlecard {
+    width: 100%;
+    background: black;
+    border-bottom: solid 5px white;
+    margin-top: 0px;
+    color: white;
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+
+.tagline {
+    font-size: .5em;
+}
+
+.logo {
+    height: 100px;
+    padding: 10px;
+}
+
+.maincontainer {
+    min-height: calc(100vh - 35px);
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h2 {
+    text-align:center;
+}
+
+button {
+    border-radius: 25%;
+    padding: 15px;
+    margin: 0 auto;
+    display: block;
+    font-size: 15px;
+    background: black;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    padding: 5px;
+    height: 25px;
+}
+
+/* Animations */
+
+.levelgo {
+  animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+    background-color: #222;
+  }
+  50% {
+    background-color: darkslategrey;
+  }
+  100% {
+    background-color: #222;
+  }
+}
+/*Level One Game*/
+
+.direction {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+.gameboard {
+    width: 75%;
+    clear: both;
+}
+
+.saleitem {
+    height: 150px;
+    width: 150px;
+    padding: 15px;
+}
+
+.itemsforsale {
+    float: left;
+}
+
+.budgetpanel {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}

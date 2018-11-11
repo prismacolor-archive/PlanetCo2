@@ -1,0 +1,112 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>PlanetCo</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Learn about budgeting by building your own planet.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="planetco.css">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    </head>
+    <body>
+        <div class="maincontainer">
+            <header class="flex-container titlecard"> 
+                <img src="Pics\LogoNoName.png" class="logo" alt="logo"> 
+                <h1 class="gametitle">PlanetCo <span class="tagline">learn to budget while building your own planet!</span></h1>
+            </header>
+
+            <main>
+                <h2>Level One</h2>
+
+                <div id="gamesection">
+
+                <p class="direction">Click on an item to add it to your cart!</p>
+
+                <div class="gameboard flex-container">
+
+                    <div class="itemsforsale">
+                        <h3>Items for Sale</h3>
+                        <table>
+                                <tr class="Row1">
+                                    <td>
+                                        <figure>
+                                            <img src="Pics\river.jpg" class="saleitem river" id="river1" alt = "river">
+                                            <figcaption>River 350 Quatros</figcaption>
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img src="Pics\tree.jpg" class="saleitem tree" id="tree1" alt = "tree">
+                                            <figcaption>Tree 175 Quatros</figcaption>
+                                        </figure>
+                                    </td>
+                                </tr>
+                                <tr class="Row2">
+                                    <td>
+                                        <figure>
+                                            <img src="Pics\cropfield.jpg" class="saleitem crops" id="crops1" alt = "crop field">
+                                            <figcaption>Crop Field 200 Quatros</figcaption>
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img src="Pics\mountain.jpg" class="saleitem mountains" id="mountains1" alt = "mountain">
+                                            <figcaption>Mountain 200 Quatros</figcaption>
+                                        </figure>
+                                    </td>
+                                </tr>
+                                <tr class="Row3">
+                                    <td>
+                                        <figure>
+                                            <img src="Pics\gold.jpg" class="saleitem gold" id="gold1" alt = "gold">
+                                            <figcaption>Gold 425 quatros</figcaption>
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img src="Pics\butterfly.jpg" class="saleitem butterflies" id="butterflies1" alt = "butterflies">
+                                            <figcaption>Butterflies 50 Quatros</figcaption>
+                                        </figure>
+                                    </td>
+                                </tr>
+                        </table>
+                    </div>
+                    <div class="budgetpanel">
+                        <h3>Budget: 500 Quatros</h3>
+                        <p id="itembought1"></p>
+                    </div>
+                </div>
+
+            </div>
+
+                    <div class="userwon hidden" id="userwon1">
+                        <h2>Congratulations!</h2>
+                        <p>Great job! You only spent <span id="spent1"></span> quatros! Since you came under budget, the Galaxy Federation has awarded you an additional 50 quatros.</p>
+            
+                        <p class="itemreward">You bought a <span id="gooditem"></span>! This is a useful item that will please your inhabits greatly and make their lives easier! Enjoy an added bonus of 50 quatros for each good item purchased.</p>
+                        
+                        <a href="level_two_info.html"><button class="levelgo">Continue?</button></a>
+                    </div>
+                    
+                    <div class="userlost hidden" id="userlost1">
+                        <h2>Bankrupt!</h2>
+                        <p>Uh oh! Looks like you went over budget! You spent <span id="spent2"></span> quatros but the limit was 500. Too bad, your planet was looking pretty sweet. Oh well, better luck next time.</p>
+            
+                        <a href="planetco.html"><button class="levelgo" id="tryagain">Try again?</button></a>
+                        
+                    </div>
+
+                <button id="purchase1">Purchase</button>
+               
+            </main>
+
+        </div>        
+
+        <footer>
+            &copy; by Taylor Roberts, Aleksandra Charleville, Terance Chambers, Eric Anspach 2018
+        </footer>
+
+        <script src="planetco.js"></script>
+
+    </body>
+</html>
